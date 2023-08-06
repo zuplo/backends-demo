@@ -1,0 +1,26 @@
+{
+  "policies": [
+    {
+      "handler": {
+        "export": "default",
+        "module": "$import(./modules/backends/backend-policy)",
+        "options": {
+          "backend": "backend-1"
+        }
+      },
+      "name": "backend-1-policy",
+      "policyType": "custom-code-inbound"
+    },
+    {
+      "handler": {
+        "export": "default",
+        "module": "$import(./modules/backends/backend-policy)",
+        "options": {
+          "backend": "backend-2"
+        }
+      },
+      "name": "custom-code-inbound",
+      "policyType": "custom-code-inbound"
+    }
+  ]
+}
